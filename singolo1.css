@@ -108,3 +108,81 @@ a:hover{
   width: 510px;
   height: 270px;
 }
+
+/*--------------------------------------------------------------------*/
+                          /* services block */
+/*--------------------------------------------------------------------*/
+
+.Our_Services{
+  height: 475px;
+  background-color: #f2f2f2;
+  border-bottom-width: 6px;
+  border-bottom-style: solid; 
+  border-bottom-color: #ffffff;
+}
+
+h2{
+  color: #666d89;
+  font-size: 30px;
+  font-family: 'Lato',sans-serif;
+  margin-top: 60px;
+  margin-left: 40px;
+  font-weight: bold;
+}
+
+.annotation{
+  margin-left: 40px;
+  color: #767e9e;
+  font-size: 16px;
+  font-family: 'Lato',sans-serif;
+  margin-top: 15px;
+  word-spacing: 2px;
+  line-height: 2em;
+}
+
+.servicesContainer {
+  margin: 26px 20px 0px 35px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.servicesBlock {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  margin-right: 15px;
+  width: 300px;
+  height: 85px;
+}
+
+.blockWrapper{
+  text-align: justify;
+  width: 220px;
+  height: 80px;
+}
+
+.icon{
+  float:left;
+  margin: 23px 20px 7px 13px;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #666d89;
+  padding: 8px;
+  border-radius: 50px;
+}
+
+h3{
+  color: #666d89;
+  font-size: 18px;
+  word-spacing: 0.1px;
+  font-family: 'Lato',sans-serif;
+  margin-bottom: 10px;
+}
+
+p{
+  color: #767e9e;
+  font-family: 'Lato',sans-serif;;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 9px;
+}
