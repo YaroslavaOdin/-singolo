@@ -10,12 +10,12 @@ main{
 /*--------------------------------------------------------------------*/
 
 header{
- height: 89px;
- background-color: #2d303a;
- display: flex;
- border-bottom-width: 6px;
- border-bottom-style: solid; 
- border-bottom-color: #323746;
+  height: 89px;
+  background-color: #2d303a;
+  display: flex;
+  border-bottom-width: 6px;
+  border-bottom-style: solid; 
+  border-bottom-color: #323746;
 }
 
 h1{
@@ -41,12 +41,12 @@ span{
 }
 
 .link{
-   color: #ffffff;
-   text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 a:hover{
-   color: #f06c64; 
+  color: #f06c64; 
 }
 
 .breadcrumbs {
@@ -67,4 +67,44 @@ a:hover{
 
 .breadcrumbs li:first-child::before {
   content: ''; 
+}
+
+/*--------------------------------------------------------------------*/
+                          /* slider block */
+/*--------------------------------------------------------------------*/
+
+.container{
+  display: flex;
+}
+
+.image{
+  height: 600px;
+  background-color: #f06c64;
+  display: flex;
+  border-bottom-width: 6px;
+  border-bottom-style: solid; 
+  border-bottom-color: #ea676b;
+}
+
+.arrow{
+  margin-left: 30px;
+  width: 45px;
+  height: 45px;
+  margin-top: 280px;
+  right:80px;
+  cursor: pointer;
+}
+
+.verphone{
+  margin-left: 45px;
+  margin-top: 55px;
+  width: 250px;
+  height: 490px;
+}
+
+.gorphone{
+  margin-left: 40px;
+  margin-top: 160px;
+  width: 510px;
+  height: 270px;
 }
