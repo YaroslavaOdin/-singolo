@@ -1,1 +1,1 @@
-https://github.com/YaroslavaOdin/singolo/blob/master/singolo1.html
+Singolo. Part 1 (header, image, 3 columns layout)
