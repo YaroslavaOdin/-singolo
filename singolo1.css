@@ -1,3 +1,5 @@
+@import "fonts.css";
+
 main{
   max-width: 1020px;
   margin: 0 auto;
@@ -16,6 +18,7 @@ header{
   border-bottom-width: 6px;
   border-bottom-style: solid; 
   border-bottom-color: #323746;
+  font-family: Lato Light;
 }
 
 h1{
@@ -29,15 +32,14 @@ h1{
 
 span{
   color: #f06c64;
-  font: 25px Georgia;
+  font-size: 25px;
   margin-top: 23px;
 }
 
 .navigation{
   font-size: 12px;
-  margin-left: 380px;
+  margin-left: 430px;
   margin-top: 42px;
-  font-family: sans-serif;
 }
 
 .link{
@@ -59,10 +61,10 @@ a:hover{
 }
 
 .breadcrumbs li::before {
-  content: "·";
+  content: "\30FB";
   color: #494e62;
-  margin-left: 10px;
-  margin-right: 10px; 
+  margin-left: 6px;
+  margin-right: 9px; 
 }
 
 .breadcrumbs li:first-child::before {
