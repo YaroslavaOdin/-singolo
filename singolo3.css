@@ -1,0 +1,189 @@
+@import "fonts.css";
+
+
+body{
+    max-width: 1020px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/*-----------------------------------------------------------------*/
+/*                       form                                      */
+/*-----------------------------------------------------------------*/
+
+.get_a_quote{
+    height: 648px;
+    background-color: #f06c64;
+    border-bottom-width: 6px;
+    border-bottom-style: solid; 
+    border-bottom-color: #ea676b;
+}
+
+.wrapper {
+    padding: 0px 40px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+}
+
+.quote_title{
+    padding-top: 58px;
+    font-size: 30px; 
+    letter-spacing: 0.3px;
+    color: #f0d8d9;
+    font-family: Lato Black;
+    font-weight: 200;
+}
+
+.quote_introduction{
+    margin-top: -5.5px;
+    font-size: 18px; 
+    line-height: 1.65;
+    word-spacing: 2px;
+    letter-spacing: -0.5px;
+    text-align: justify;
+    color: #f0d8d9;
+    font-family: Lato Light;
+    font-weight: normal;
+}
+
+form{
+    margin-top: 25px;
+}
+
+.form_contact {
+    width: 604px;
+    height: 36px;
+    padding-left: 15px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    color: #f48c8f;
+    background-color: #d6564f;
+    border: none;
+    outline: none;
+    font-family: Lato Regular;
+    font-size: 15px;
+}
+
+.textarea {
+    width: 604px;
+    height: 188px;
+    padding-top: 14px;
+    resize: none;
+    overflow: auto;
+}
+
+.form_contact::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    color: #f48c8f;
+    font-family: Lato Regular;
+}
+
+.form_submit {
+    display: block;
+    margin-top: -4px;
+    width: 130px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #d6564f;
+    color: #f0d8d9;
+    border:2px solid #f0d8d9;
+    cursor: pointer;
+    outline: none;
+}
+
+address{
+    font-style: normal;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.information{
+    margin-left: -55px;
+}
+
+.information_title {
+    font-size: 18px;
+    font-family: Lato Black;
+    font-weight: 200;
+    color: #f0d8d9;
+}
+
+.information_introduction{
+    margin-top: -8px;
+    font-size: 12px;
+    font-family: Lato Regular;
+    text-align: justify;
+    line-height: 1.75;
+    color: #f0d8d9;
+}
+
+.contact_information{
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.address_link{
+    margin-top: -8px;
+    font-size: 12px;
+    font-family: Lato Regular;
+    line-height: 1.75;
+    color: #f0d8d9;
+}
+
+.contact_icon{
+    cursor: pointer;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+}
+
+
+/*-----------------------------------------------------------------*/
+/*                       footer                                    */
+/*-----------------------------------------------------------------*/
+
+footer{
+    height: 76px;
+    background-color: #2d303a;
+}
+
+.copyright{
+    margin-top: 31px;
+    margin-left: 40px;
+    font-family: "Lato-Light", sans-serif;
+    font-size: 12px;
+    color: #666d89;
+}
+
+a{
+    border: none;
+    text-decoration: none;
+}
+
+.container_footer_icon{
+    margin-top: -35px;
+    margin-left: 828px;
+}
+
+.item_icon{
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+}
+
+.scale {
+    transition: 0.5s; 
+   }
+
+.scale:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+   }
