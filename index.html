@@ -4,12 +4,12 @@
       <meta charset="utf-8">
       <link rel="stylesheet" href="style.css">
       <title>Singolo of Adzinets Yaraslava</title>
+      <script async src="script.js"></script>
     </head>
-    <main>
-     <header>
+     <header id = "header">
       <h1>SINGOLO<span>*</span></h1>
        <ul class="breadcrumbs">
-        <nav class="navigation">
+        <nav class="menu" id = "menu">
          <li><a class="link" href="#Home">HOME</a></li>
          <li><a class="link" href="#Services">SERVICES</a></li>
          <li><a class="link" href="#Portfolio">PORTFOLIO</a></li>
@@ -18,15 +18,25 @@
        </nav>
       </ul>
      </header>
-     <section class="image">
-      <div class="container">
-        <img src="singolo/assets/left_arrow.png" alt="left" class="arrow">
-         <img src="singolo/assets/verphone.png" alt="Slider" class="verphone">
-	      <img src="singolo/assets/gorphone.png" alt="Slider" class="gorphone">
-         <img src="singolo/assets/right_arrow.png" alt="right" class="arrow">
-      </div>
+     <main>
+     <section class="image" id = "Home">
+         <div class="slider" id="slider">
+           <img src = "assets/left_arrow.png" class="slider__button_left slider__arrow" id="arrow_left" href="#">
+           <img src = "assets/right_arrow.png" class="slider__button_right slider__arrow" id="arrow_right" href="#">
+           <div class="slider__slide slide_slide1" id = "slide_slide1">
+             <img class="slide__phone-vertical" src="assets/verphone.png" alt="PhoneVertical"  id = "vertical_phone">
+             <img class="slide__phone-horizontal" src="assets/gorphone.png" alt="PhoneHorizontal"  id = "horizontal_phone">
+             <div>
+               <img src = "assets/vertical_screen.png" id = "vertical_screen" class = "vertical_screen display_none">
+               <img src = "assets/horizontal_screen.png" id = "horizontal_screen" class = "horizontal_screen display_none">
+              </div> 
+           </div>
+           <div class="slider__slide slide_slide2" id = "slide_slide2">
+             <img class="slide__slide-2" src="assets/slide2.png" alt="slide-2" class = "display_none">
+           </div> 
+         </div> 
      </section>
-     <section class="Our_Services">
+     <section class="Our_Services" id = "Services">
      	<div>
      	<h2>Our Services</h2>
         	<p class="annotation">Furse dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
@@ -36,42 +46,42 @@
        </div>
 	    <div class="servicesContainer">
         <div class="servicesBlock">
-         	<img src="singolo/assets/pen.png" alt="Pen" class="icon">
+         	<img src="assets/pen.png" alt="Pen" class="icon">
          	<div class="blockWrapper">
 		         <h3>Custom Design</h3>
          		<p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
             </div>
          </div>
          <div class="servicesBlock">
-         	<img src="singolo/assets/bulb.png" alt="bulb" class="icon">
+         	<img src="assets/bulb.png" alt="bulb" class="icon">
          	   <div class="blockWrapper">
 		         <h3>Inovative Ideas</h3>
           		<p>Quisque luctus, quam eget molestie com&shy;modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
        	</div>
          </div>
          <div class="servicesBlock">
-         	<img src="singolo/assets/heart.png" alt="heart" class="icon">
+         	<img src="assets/heart.png" alt="heart" class="icon">
          	   <div class="blockWrapper">
 		            <h3>Love Is The Answer</h3>
           		   <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
        		</div>
          </div>
 	      <div class="servicesBlock">
-         	<img src="singolo/assets/phone.png" alt="Phone" class="icon">
+         	<img src="assets/phone.png" alt="Phone" class="icon">
          	<div class="blockWrapper">
 		         <h3>Responsive Layout</h3>
           		<p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula Prae&shy;sent elit leo.</p>
        		</div>
          </div>
          <div class="servicesBlock">
-         	<img src="singolo/assets/bubble.png" alt="bubble" class="icon">
+         	<img src="assets/bubble.png" alt="bubble" class="icon">
          	<div class="blockWrapper">
 		         <h3>24 / 7 Support</h3>
           		<p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellen&shy;tesque egestas venenatis lorem.</p>
        		</div>
          </div>
          <div class="servicesBlock">
-         	   <img src="singolo/assets/star.png" alt="Phone" class="icon">
+         	   <img src="assets/star.png" alt="Phone" class="icon">
          	   <div class="blockWrapper">
 		         <h3>Feel Like A Star</h3>
           		<p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
@@ -79,7 +89,7 @@
       </div>
       </div>
    </section>
-   <section class="portfolio">
+   <section class="portfolio" id = "Portfolio">
          <h2 class="portfolio_heading">
              Portfolio
          </h2>
@@ -87,38 +97,38 @@
             Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
          </p>
          <ul>
-            <nav>
+            <nav id = "tags">
             <li><button href="#All">All</button></li>
             <li><button href="#Web Design">Web Design</button></li>
             <li><button href="#Graphic Design">Graphic Design</button></li>
             <li><button href="#Artwork">Artwork</button></li>
            </nav>
          </ul>
-         <div class="container_portfolio">
-            <img src="singolo/assets/img_1.png">
-            <img src="singolo/assets/img_2.png">
-            <img src="singolo/assets/img_3.png">
-            <img src="singolo/assets/img_4.png">
-            <img src="singolo/assets/img_5.png">
-            <img src="singolo/assets/img_6.png">
-            <img src="singolo/assets/img_7.png">
-            <img src="singolo/assets/img_8.png">
-            <img src="singolo/assets/img_9.png">
-            <img src="singolo/assets/img_10.png">
-            <img src="singolo/assets/img_11.png">
-            <img src="singolo/assets/img_12.png">
+         <div class="container_portfolio" id = "container_portfolio">
+            <img src="assets/img_1.png">
+            <img src="assets/img_2.png">
+            <img src="assets/img_3.png">
+            <img src="assets/img_4.png">
+            <img src="assets/img_5.png">
+            <img src="assets/img_6.png">
+            <img src="assets/img_7.png">
+            <img src="assets/img_8.png">
+            <img src="assets/img_9.png">
+            <img src="assets/img_10.png">
+            <img src="assets/img_11.png">
+            <img src="assets/img_12.png">
          </div>
      </section>
-     <section class="about_us">
+     <section class="about_us" id = "About">
          <h2 class ="about_us_heading"> About Us</h2>
          <p class= "about_us_introduction">
             Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula,
             eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
          </p>
          <div class="container_about_us">
-            <img src="singolo/assets/About_us_img_1.png">
-            <img src="singolo/assets/About_us_img_2.png">
-            <img src="singolo/assets/About_us_img_3.png">
+            <img src="assets/About_us_img_1.png">
+            <img src="assets/About_us_img_2.png">
+            <img src="assets/About_us_img_3.png">
          </div>
          <div class="container_about_us_article">
             <div class="item">
@@ -128,16 +138,16 @@
                </p>
                <div class="container_icon">
                   <a href="#">
-                     <img src="singolo/assets/icon_1.png" alt=">Link to facebook" class="item_icon scale">
+                     <img src="assets/icon_1.png" alt=">Link to facebook" class="item_icon scale">
                   </a>
                   <a href="#">
-                     <img src="singolo/assets/icon_2.png" alt=">Link to google_plus" class="item_icon scale">
+                     <img src="assets/icon_2.png" alt=">Link to google_plus" class="item_icon scale">
                   </a>
                   <a href="#">
-                     <img src="singolo/assets/icon_3.png" alt=">Link to twitter" class="item_icon scale">
+                     <img src="assets/icon_3.png" alt=">Link to twitter" class="item_icon scale">
                   </a>
                   <a href="#">
-                     <img src="singolo/assets/icon_4.png" alt=">Link to linkedin" class="item_icon scale">
+                     <img src="assets/icon_4.png" alt=">Link to linkedin" class="item_icon scale">
                   </a>
                </div>
             </div>
@@ -148,16 +158,16 @@
                </p>
                <div class="container_icon">
                   <a href="#">
-                     <img src="singolo/assets/icon_1.png" alt=">Link to facebook" class="item_icon scale">
+                     <img src="assets/icon_1.png" alt=">Link to facebook" class="item_icon scale">
                   </a>
                   <a href="#">
-                     <img src="singolo/assets/icon_2.png" alt=">Link to google_plus" class="item_icon scale">
+                     <img src="assets/icon_2.png" alt=">Link to google_plus" class="item_icon scale">
                   </a>
                   <a href="#">
-                     <img src="singolo/assets/icon_3.png" alt=">Link to twitter" class="item_icon scale">
+                     <img src="assets/icon_3.png" alt=">Link to twitter" class="item_icon scale">
                   </a>
                   <a href="#">
-                     <img src="singolo/assets/icon_4.png" alt=">Link to linkedin" class="item_icon scale">
+                     <img src="assets/icon_4.png" alt=">Link to linkedin" class="item_icon scale">
                   </a>
                </div>
             </div>
@@ -168,70 +178,79 @@
                </p>
                <div class="container_icon">
                   <a href="#">
-                     <img src="singolo/assets/icon_1.png" alt=">Link to facebook" class="item_icon scale">
+                     <img src="assets/icon_1.png" alt=">Link to facebook" class="item_icon scale">
                   </a>
                   <a href="#">
-                     <img src="singolo/assets/icon_2.png" alt=">Link to google_plus" class="item_icon scale">
+                     <img src="assets/icon_2.png" alt=">Link to google_plus" class="item_icon scale">
                   </a>
                   <a href="#">
-                     <img src="singolo/assets/icon_3.png" alt=">Link to twitter" class="item_icon scale">
+                     <img src="assets/icon_3.png" alt=">Link to twitter" class="item_icon scale">
                   </a>
                   <a href="#">
-                     <img src="singolo/assets/icon_4.png" alt=">Link to linkedin" class="item_icon scale">
+                     <img src="assets/icon_4.png" alt=">Link to linkedin" class="item_icon scale">
                   </a>
                </div>
             </div>
          </div>
      </section>
-      <section class="get_a_quote">
+      <section class="get_a_quote" id = "Contact">
          <div class="wrapper">
             <h2 class="quote_title">Get a Quote</h2>
-                    <p class="quote_introduction">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                    <div class="contact">
-                        <form class="form" action="URL" method="post">
-                            <input class="form_contact" type="text" name="name" placeholder="Name (Required)" required>
-                            <input class="form_contact" type="email" name="email" placeholder="Email (Required)" required>
-                            <input class="form_contact" type="text" name="subject" placeholder="Subject">
-                            <textarea class="form_contact textarea"  name="field" id="" placeholder="Describe your project in detail..."></textarea>
-                            <input class="form_submit" type="submit" value="Submit">
-                        </form>
-                        <address class="information">
-                            <h3 class="information_title">Contact Information</h3>
-                            <p class="information_introduction">Quisque hendrerit purus dapibus, ornare nibh vitae, viver-ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
-                            <div class="information_contact">
-                                <div>
-                                    <img src="singolo/assets/contact_img1.png" alt=">Link to address" class="contact_icon">
-                                    <a class="address_link" href="#">Elm St. 14/05 Lost City</a>
-                                </div>
-                                <div>
-                                    <img src="singolo/assets/contact_img2.png" alt=">Link to phone" class="contact_icon">
-                                    <a class="address_link" href="tel:03528 331 86 35">03528 331 86 35</a>
-                                </div>
-                                <div>
-                                    <img src="singolo/assets/contact_img3.png" alt=">Link to mail" class="contact_icon">
-                                    <a class="address_link" href="mail">info@singolo.com</a>
-                                </div>
+               <p class="quote_introduction">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                  <div class="contact">
+                     <form class="form" id = "forma">
+                        <input class="form_contact" type="text" name = "name" id = "name" placeholder="Name (Required)" required>
+                        <input class="form_contact" type="email" name = "email" id = "email" placeholder="Email (Required)" required>
+                        <input class="form_contact" type="text" name = "subject" id = "subject" placeholder="Subject">
+                        <textarea class="form_contact textarea"  name = "field" id = "project" placeholder="Describe your project in detail..."></textarea>
+                        <input class="form_submit" type="submit" value = "Submit">
+                     </form>
+                     <div class="modal modal_hidden" id="modal">
+                        <div class="modal__content">
+                            <div class="modal__close"></div>
+                            <p class="modal_text letter_sent">Письмо отправлено</p>
+                            <p id = "text_subject"> </p>
+                            <p id = "text_project"> </p>
+                            <button class="modal_button" id = "modal_button">OK</button>
+                        </div>
+                     </div>
+                   <address class="information">
+                     <h3 class="information_title">Contact Information</h3>
+                     <p class="information_introduction">Quisque hendrerit purus dapibus, ornare nibh vitae, viver-ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
+                     <div class="information_contact">
+                     <div>
+                        <img src="assets/contact_img1.png" alt=">Link to address" class="contact_icon">
+                        <a class="address_link" href="#">Elm St. 14/05 Lost City</a>
+                     </div>
+                     <div>
+                        <img src="assets/contact_img2.png" alt=">Link to phone" class="contact_icon">
+                           <a class="address_link" href="tel:03528 331 86 35">03528 331 86 35</a>
+                     </div>
+                     <div>
+                        <img src="assets/contact_img3.png" alt=">Link to mail" class="contact_icon">
+                           <a class="address_link" href="mail">info@singolo.com</a>
+                     </div>
                                 
-                            </div>
-                        </address>
-                    </div>
-                </div>
+                  </div>
+                </address>
+            </div>
+            </div>
             </section>
         </main>
         <footer>
-            <p class="copyright">© Copyright 2013</p>
+         <p class="copyright">© Copyright 2013</p>
             <div class="container_footer_icon">
                 <a href="#">
-                    <img src="singolo/assets/icon_1.png" alt=">Link to facebook" class="item_icon scale">
+                    <img src="assets/icon_1.png" alt=">Link to facebook" class="item_icon scale">
                  </a>
                  <a href="#">
-                    <img src="singolo/assets/icon_2.png" alt=">Link to google_plus" class="item_icon scale">
+                    <img src="assets/icon_2.png" alt=">Link to google_plus" class="item_icon scale">
                  </a>
                  <a href="#">
-                    <img src="singolo/assets/icon_3.png" alt=">Link to twitter" class="item_icon scale">
+                    <img src="assets/icon_3.png" alt=">Link to twitter" class="item_icon scale">
                  </a>
                  <a href="#">
-                    <img src="singolo/assets/icon_4.png" alt=">Link to linkedin" class="item_icon scale">
+                    <img src="assets/icon_4.png" alt=">Link to linkedin" class="item_icon scale">
                  </a>
                 </div>
         </footer>
