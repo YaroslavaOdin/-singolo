@@ -10,6 +10,27 @@ const SUBMIT = document.getElementById("forma");
 const MODAL = document.getElementById("modal");
 const MODAL_BUTTON = document.getElementById("modal_button")
 
+document.addEventListener('scroll', onScroll);
+
+function onScroll(event){
+    const headerHeight = document.getElementsByClassName('header')[0].offsetHeight;
+    const curPos = window.scrollY + headerHeight;
+    const sections = document.querySelectorAll('section');
+    const links = document.querySelectorAll('#menu a');
+    sections.forEach((el)=>{
+        console.log(el);
+        el.getAttribute('id');
+
+        if(el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos){
+            links.forEach((a)=>{
+                a.classList.remove('menu_active');
+                if(el.getAttribute('id') === a.getAttribute('href').substring(1)){
+                    a.classList.add('menu_active');
+                }
+            })
+        }
+    });
+}
 
 MENU.addEventListener('click', (event) =>{
     MENU.querySelectorAll('.link').forEach(item => item.classList.remove('menu_active'));
@@ -99,3 +120,4 @@ document.querySelector('.slider__button_right').addEventListener('click', (event
         document.getElementById('slide_slide2').style.transform = 'translateX(0px)';
     }
 });
+
