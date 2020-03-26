@@ -1,5 +1,9 @@
 @import "fonts.css";
 
+html  {
+    scroll-behavior: smooth;
+}
+
 body{
     max-width: 1020px;
     margin: 0 auto;
@@ -17,17 +21,19 @@ main{
                           /* header block */
 /*--------------------------------------------------------------------*/
 
-header{
-  height: 90px;
-  background-color: #2d303a;
-  display: flex;
-  border-bottom-width: 6px;
-  border-bottom-style: solid; 
-  border-bottom-color: #323746;
-  font-family: Lato Light;
+.header{
+    height: 90px;
+    background-color: #2d303a;
+    border-bottom: 6px solid #323746;
+    position: fixed;
+    width: 1020px;
+    z-index: 100;
+    font-family: Lato Light;
+    
 }
 
 h1{
+    position: fixed;
     display: inline-block;
     margin-top: 29px;
     margin-left: 41px;
@@ -46,10 +52,11 @@ span{
 }
 
 .menu{
+    position: fixed;
     display: inline-block;
     white-space: nowrap;
     font-size: 12px;
-    margin-left: 430px;
+    margin-left: 595px;
     margin-top: 40px;
     font-weight: 580;
 }
@@ -63,7 +70,7 @@ span{
     color: #f06c64;
 }
 
-.menu__active, .menu li a:hover {
+.menu_active, .menu li a:hover {
     color: #f06c64;
     transition: all .3s;
 }
@@ -92,6 +99,10 @@ a:not(.menu_active):hover{
   content: ''; 
 }
 
+#Services, #Portfolio, #About, #Contact {
+    scroll-margin-top: 94px;
+}
+
 /*--------------------------------------------------------------------*/
                           /* slider block */
 /*--------------------------------------------------------------------*/
@@ -99,10 +110,11 @@ a:not(.menu_active):hover{
 .slider {
     position: relative;
     width: 1020px;
-    height: 594px;
+    height: 593px;
     background-color: #f06c64;
     overflow: hidden;  
     user-select: none;
+    margin-top: 90px;
   }
   
   .slider__arrow {
@@ -331,7 +343,6 @@ button{
     background-color: inherit;
     padding: 2px 6px 3px 6px;
     border-radius: 5px;
-    
 }
 
 button:hover{
@@ -362,7 +373,7 @@ button:hover{
 
  .image_selected{
     outline: solid 5px #F06C64;
-    outline-offset: -4.5px;
+    
  }
 
  /*--------------------------------------------------------------------*/
