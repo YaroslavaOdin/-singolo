@@ -35,14 +35,14 @@ main{
 h1{
     position: fixed;
     display: inline-block;
-    margin-top: 29px;
-    margin-left: 41px;
-    font-size: 25px; 
-    cursor: pointer;
-    color: #ffffff;
-    font-stretch: condensed;
-    font-family: Lato Bold;
-    font-weight: 200;
+    margin-left: 40px;
+    margin-top: 31px;
+    letter-spacing: -0.85px;
+    color: #FFFFFF;
+    line-height: 1;
+    font-family: "Lato Regular", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 span{
@@ -55,10 +55,12 @@ span{
     position: fixed;
     display: inline-block;
     white-space: nowrap;
-    font-size: 12px;
-    margin-left: 595px;
+    font-family: "Lato Regular", sans-serif;
+    margin-top: 29px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-left: 600px;
     margin-top: 40px;
-    font-weight: 580;
 }
 
 .link{
@@ -91,8 +93,8 @@ a:not(.menu_active):hover{
 .breadcrumbs li::before {
   content: "\30FB";
   color: #494e62;
-  margin-left: 6px;
-  margin-right: 9px;
+  margin-left: 3px;
+  margin-right: 6px;
 }
 
 .breadcrumbs li:first-child::before {
@@ -110,11 +112,12 @@ a:not(.menu_active):hover{
 .slider {
     position: relative;
     width: 1020px;
-    height: 593px;
+    height: 604px;
     background-color: #f06c64;
     overflow: hidden;  
     user-select: none;
     margin-top: 90px;
+    
   }
   
   .slider__arrow {
@@ -158,12 +161,12 @@ a:not(.menu_active):hover{
   
   .slide__phone-horizontal {
     position: absolute;
-    top: 173px;
-    left: 430px;
+    top: 165px;
+    left: 407px;
   }
 
   .slide_slide1 {
-    height: 589px;
+    height: 598px;
     transform: translateX(0px);
     transition: transform 0.6s ease;
     background-color: #f06c64;
@@ -171,11 +174,12 @@ a:not(.menu_active):hover{
   }
 
   .slide_slide2 {
-    height: 589px;
+    height: 598px;
     transform: translateX(1020px);
     transition: transform 0.6s ease;
     background-color: #6A5ACD;
     border-bottom: 6px solid #483D8B;
+    z-index: 10;
   }
 
   .slide__slide-2{
@@ -194,11 +198,11 @@ a:not(.menu_active):hover{
 
 .horizontal_screen{
     position: absolute;
-    width: 334px;
+    width: 333px;
     height: 189px;
     z-index: 100;
-    margin-left: 508px;
-    margin-top: 200px;
+    margin-left: 486px;
+    margin-top: 192px;
 }
 
 /*--------------------------------------------------------------------*/
@@ -206,93 +210,93 @@ a:not(.menu_active):hover{
 /*--------------------------------------------------------------------*/
 
 .Our_Services{
- height: 494px;
- background-color: #f2f2f2;
- border-bottom-width: 6px;
- border-bottom-style: solid; 
- border-bottom-color: #ffffff;
-}
-
-h2{
-  color: #666d89;
-  font-size: 28px;
-  font-family: Lato Bold;
-  margin-top: 60px;
-  margin-left: 40px;
-  letter-spacing: 1px;
-}
-
-.annotation{
-  margin: -4px 50px 0px 35px;
-  color: #767e9e;
-  font-size: 17px;
-  font-family: Lato Light;
-  word-spacing: 1px;
-  line-height: 1.73;
-}
-
-.servicesContainer {
- display: flex;
- margin: 27px 25px 0px 27px;
- flex-direction: row;
- flex-wrap: wrap;
- align-content: flex-start;
-}
-
-.servicesBlock {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  width: 315px;
-  height: 125px;
-}
-
-.blockWrapper{
-  text-align: justify;
-  width: 220px;
-  height: 80px;
-}
-
-.icon{
-  width: 60px;
-  height: 60px;
-  float:left;
-  margin: 20px 17px 7px 13px;
-}
-
-h3{
-  letter-spacing: 1px;
-  color: #666d89;
-  font-size: 18px;
-  word-spacing: 0.1px;
-  font-family: Lato Regular;
-  margin-bottom: 10px;
-}
-
-p{
-  text-align: justify;
-  color: #767e9e;
-  font-family: Lato Light;
-  font-size: 12px;
-  line-height: 2em;
-  margin-top: 9px;
-}
-
-.portfolio{
-    height: 862px;
-    background-color: #2d303a;
-    border-bottom-width: 6px;
-    border-bottom-style: solid; 
-    border-bottom-color: #323746;
-}
-
-.about_us{
-    height: 727px;
+    height: 494px;
     background-color: #f2f2f2;
     border-bottom-width: 6px;
     border-bottom-style: solid; 
     border-bottom-color: #ffffff;
-}
+   }
+   
+   h2{
+     color: #666d89;
+     font-size: 28px;
+     font-family: Lato Bold;
+     margin-top: 60px;
+     margin-left: 40px;
+     letter-spacing: 1px;
+   }
+   
+   .our-services__description{
+     margin: -4px 50px 0px 35px;
+     color: #767e9e;
+     font-size: 17px;
+     font-family: Lato Light;
+     word-spacing: 1px;
+     line-height: 1.73;
+   }
+   
+   .servicesContainer {
+    display: flex;
+    margin: 27px 25px 0px 27px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+   }
+   
+   .servicesBlock {
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     width: 315px;
+     height: 125px;
+   }
+   
+   .blockWrapper{
+     text-align: justify;
+     width: 220px;
+     height: 80px;
+   }
+   
+   .icon{
+     width: 60px;
+     height: 60px;
+     float:left;
+     margin: 20px 17px 7px 13px;
+   }
+   
+   h3{
+     letter-spacing: 1px;
+     color: #666d89;
+     font-size: 18px;
+     word-spacing: 0.1px;
+     font-family: Lato Regular;
+     margin-bottom: 10px;
+   }
+   
+   p{
+     text-align: justify;
+     color: #767e9e;
+     font-family: Lato Light;
+     font-size: 12px;
+     line-height: 2em;
+     margin-top: 9px;
+   }
+   
+   .portfolio{
+       height: 862px;
+       background-color: #2d303a;
+       border-bottom-width: 6px;
+       border-bottom-style: solid; 
+       border-bottom-color: #323746;
+   }
+   
+   .about_us{
+       height: 727px;
+       background-color: #f2f2f2;
+       border-bottom-width: 6px;
+       border-bottom-style: solid; 
+       border-bottom-color: #ffffff;
+   }
 
 /*--------------------------------------------------------------------*/
                          /* portfolio block */
@@ -359,17 +363,22 @@ button:hover{
  .container_portfolio{
     display: flex;
     flex-wrap: wrap;
-    overflow: hidden;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 19px;
+    padding: 5px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 14px;
     justify-content: space-between;
  }
 
  .container_portfolio img{
     margin-bottom: 20px;
     cursor: pointer;
+
  }
+
+ .container_portfolio img:nth-child(n+13) {
+    display: none;
+}
 
  .image_selected{
     outline: solid 5px #F06C64;
@@ -688,3 +697,4 @@ a{
 .display_none{
     display: none;
 }
+
