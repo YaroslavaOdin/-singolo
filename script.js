@@ -97,9 +97,10 @@ SUBMIT.addEventListener('submit', (event) => {
     }
 });
 
-MODAL_BUTTON.addEventListener('click', () => {
-    MODAL.classList.add('display_none');
-})
+PORTFOLIO_IMG.addEventListener('click', (event) =>{
+    PORTFOLIO_IMG.querySelectorAll("#container_portfolio img").forEach(item => item.classList.remove('image_selected'));
+    event.target.classList.add('image_selected');
+});
 
 document.querySelector('.slider__button_left').addEventListener('click', (event) => {
     if(document.getElementById('slide_slide1').style.transform == 'translateX(-1020px)') {
