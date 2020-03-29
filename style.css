@@ -177,8 +177,8 @@ a:not(.menu_active):hover{
     height: 598px;
     transform: translateX(1020px);
     transition: transform 0.6s ease;
-    background-color: #6A5ACD;
-    border-bottom: 6px solid #483D8B;
+    background-color: #648bf0;
+    border-bottom: 6px solid #5678cf;
     z-index: 10;
   }
 
